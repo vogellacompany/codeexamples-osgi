@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="activate" name="com.vogella.tasks.services.internal.FakeDatabasePersistance">
+   <property name="message" value="This is a demo of an inline configured service"/>
+   <property name="parallelUpdates" type="Integer" value="3"/>
+   <implementation class="com.vogella.tasks.services.internal.FakeDatabasePersistance"/>
+</scr:component>

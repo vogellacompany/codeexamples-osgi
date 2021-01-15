@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<target name="target-platform">
+	<locations>
+		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+			<repository location="http://download.eclipse.org/releases/latest"/>
+			<unit id="org.eclipse.equinox.compendium.sdk.feature.group" version="3.20.400.v20201102-2042"/>
+			<unit id="org.eclipse.equinox.core.feature.feature.group" version="1.13.0.v20201107-1818"/>
+			<unit id="org.eclipse.sdk.ide" version="0.0.0"/>
+			<unit id="org.junit.jupiter.api" version="0.0.0"/>
+			<unit id="org.junit.jupiter.engine" version="0.0.0"/>
+			<unit id="org.junit" version="0.0.0"/>
+			<unit id="org.junit.jupiter.engine" version="0.0.0"/>
+			<unit id="org.junit.jupiter.params" version="0.0.0"/>
+			<unit id="org.junit.jupiter.migrationsupport" version="0.0.0"/>
+			<unit id="org.eclipse.jdt.junit5.runtime" version="0.0.0"/>
+		</location>
+		<location includeSource="true" missingManifest="generate" type="Maven">
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.4</version>
+			<type>jar</type>
+		</location>
+		<location includeSource="true" missingManifest="generate" type="Maven">
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+			<type>jar</type>
+		</location>
+		<location includeSource="true" missingManifest="generate" type="Maven">
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.6</version>
+			<type>jar</type>
+		</location>
+		<location includeSource="true" missingManifest="generate" type="Maven">
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.http.jetty</artifactId>
+			<version>4.1.4</version>
+			<type>jar</type>
+		</location>
+		<location includeSource="true" missingManifest="generate" type="Maven">
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.webconsole.plugins.ds</artifactId>
+			<version>2.1.0</version>
+			<type>jar</type>
+		</location>
+		<location includeSource="true" missingManifest="generate" type="Maven">
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.webconsole.plugins.event</artifactId>
+			<version>1.1.8</version>
+			<type>jar</type>
+		</location>
+		<location includeDependencyScope="provided" includeSource="true" missingManifest="generate" type="Maven">
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.webconsole</artifactId>
+			<version>4.6.0</version>
+			<type>jar</type>
+		</location>
+		<location includeSource="true" missingManifest="generate" type="Maven">
+			<groupId>org.apache.felix</groupId>
+			<artifactId>org.apache.felix.inventory</artifactId>
+			<version>1.0.6</version>
+			<type>jar</type>
+		</location>
+	</locations>
+</target>

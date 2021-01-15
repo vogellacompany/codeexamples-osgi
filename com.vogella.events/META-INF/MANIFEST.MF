@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Events
+Bundle-SymbolicName: com.vogella.events
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: VOGELLA
+Automatic-Module-Name: com.vogella.events
+Bundle-RequiredExecutionEnvironment: JavaSE-15
+Export-Package: com.vogella.events
