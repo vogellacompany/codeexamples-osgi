@@ -72,7 +72,7 @@
         </artifact>
     </target>
      <!-- Optional set the Java version your are using-->
-      <!--   <executionEnvironment>JavaSE-14</executionEnvironment>-->
+    <executionEnvironment>JavaSE-15</executionEnvironment>
      <environments>
       <environment>
        <os>linux</os>
@@ -100,6 +100,11 @@
     <!-- BUG JUnit5 test fail currently with Tycho -->
     <!-- <module>com.vogella.tasks.services.tests</module> -->
     <module>com.vogella.events</module>
+    <module>com.vogella.osgi.configure</module>
+    <module>com.vogella.osgi.console</module>
+    <module>com.vogella.osgi.eventreceiver</module>
+    <module>com.vogella.osgi.runtime</module>
+    <module>com.vogella.osgi.taskconsumer</module>
     <module>target-platform</module>
  </modules>
 </project>
