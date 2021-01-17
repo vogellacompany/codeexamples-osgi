@@ -28,13 +28,7 @@
 			<version>2.4</version>
 			<type>jar</type>
 		</location>
-		<location includeSource="true" missingManifest="generate" type="Maven">
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>1.6</version>
-			<type>jar</type>
-		</location>
-		<location includeSource="true" missingManifest="generate" type="Maven">
+		<location includeDependencyScope="compile" includeSource="true" missingManifest="generate" type="Maven">
 			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.http.jetty</artifactId>
 			<version>4.1.4</version>
