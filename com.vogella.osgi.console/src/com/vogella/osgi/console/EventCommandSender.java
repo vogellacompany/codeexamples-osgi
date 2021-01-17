@@ -21,8 +21,12 @@ public class EventCommandSender implements CommandProvider {
 	
     public void _sendEvent(CommandInterpreter ci) {
     	String command = ci.nextArgument();
-
-        // create the event properties object
+    	if (command == null)
+    	{
+    		command = "";
+    	}
+    	
+    	// create the event properties object
         Map<String, Object> properties = new HashMap<>();
         properties.put(VogellaEventConstants.PROPERTY_KEY_TARGET, command);
         Event event = null;
@@ -34,11 +38,11 @@ public class EventCommandSender implements CommandProvider {
             case "update":
                 event = new Event(VogellaEventConstants.TOPIC_UPDATE, properties);
                 break;
-            case "":
+            case "switch":
                 event = new Event(VogellaEventConstants.TOPIC_SWITCH, properties);
                 break;
             default:
-                System.out.println("Such a command is not known!");
+                System.out.println(command + " is not known as event! See help sendEvent");
         }
  
         if (event != null) {
