@@ -3,6 +3,5 @@
    <service>
       <provide interface="com.vogella.tasks.model.TaskService"/>
    </service>
-   <reference bind="getDatabasePersistance" interface="com.vogella.tasks.model.DatabasePersistance" name="getDatabasePersistance"/>
    <implementation class="com.vogella.tasks.services.internal.TransientTaskServiceImpl"/>
 </scr:component>

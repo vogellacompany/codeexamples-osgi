@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="com.vogella.osgi.eventreceiver.EventReaction">
+   <property name="event.topics">com/vogella/events/UPDATE
+com/vogella/events/SWITCH
+   </property>
+   <service>
+      <provide interface="org.osgi.service.event.EventHandler"/>
+   </service>
+   <implementation class="com.vogella.osgi.eventreceiver.EventReaction"/>
+</scr:component>

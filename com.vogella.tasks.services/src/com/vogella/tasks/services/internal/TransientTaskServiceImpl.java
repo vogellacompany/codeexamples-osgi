@@ -18,11 +18,11 @@ import com.vogella.tasks.model.TaskService;
 @Component 
 public class TransientTaskServiceImpl implements TaskService {
 
-	@Reference 
-	private void getDatabasePersistance(DatabasePersistance test) {
-		System.out.println("Got alternative service " +test);
-	};
-	
+//	@Reference 
+//	private void getDatabasePersistance(DatabasePersistance test) {
+//		System.out.println("Got alternative service " +test);
+//	};
+//	
     private static AtomicInteger current = new AtomicInteger(1);
     private List<Task> tasks;
 

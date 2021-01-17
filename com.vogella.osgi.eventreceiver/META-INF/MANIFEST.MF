@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eventreceiver
+Bundle-SymbolicName: com.vogella.osgi.eventreceiver
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: VOGELLA
+Automatic-Module-Name: com.vogella.osgi.eventreceiver
+Bundle-RequiredExecutionEnvironment: JavaSE-15
+Import-Package: com.vogella.events,
+ org.osgi.service.component.annotations;version="1.3.0";resolution:=optional,
+ org.osgi.service.event;version="1.4.0"
+Bundle-ActivationPolicy: lazy
+Service-Component: OSGI-INF/com.vogella.osgi.eventreceiver.WildcardEventReceiver.xml,
+ OSGI-INF/com.vogella.osgi.eventreceiver.EventReaction.xml

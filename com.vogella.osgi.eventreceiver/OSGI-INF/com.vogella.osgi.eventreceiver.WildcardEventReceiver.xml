@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="com.vogella.osgi.eventreceiver.WildcardEventReceiver">
+   <property name="event.topics" value="com/vogella/events/*"/>
+   <property name="event.filter" value="(!(target=update))"/>
+   <service>
+      <provide interface="org.osgi.service.event.EventHandler"/>
+   </service>
+   <implementation class="com.vogella.osgi.eventreceiver.WildcardEventReceiver"/>
+</scr:component>
